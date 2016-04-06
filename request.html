@@ -54,10 +54,58 @@
             </div>
         </div>
     </header>        
-    <!-- END HEADER -->     
+    <!-- END HEADER -->
+
     <!-- BEGIN MAIN -->    
     <main class="main">       
-		<div class="inner-page"></div>
+		<div class="inner-page">
+            <section class="request-wrapper">
+                <div class="request center">
+                    <div class="inner-page-head">
+                        <h1 class="inner-page-head__title">Подайте заявку</h1>
+                        <div class="inner-page-head__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    </div>
+                    <form action="/" class="request-form">
+                        <input type="text" class="input" name="name" placeholder="Фамилия / Имя" required>
+                        <input type="text" class="input" name="phone" placeholder="Телефон" required>
+                        <input type="text" class="input" name="direction" placeholder="Творческое направление" required>
+                        <div class="input-box input-box_photo">
+                            <label for="photo">Загрузить<br>фотографию</label>
+                            <input type="file" name="photo" id="photo">
+                        </div>
+                        <div class="input-box input-box_portfolio clearfix">
+                            <label>Портфолио:</label>
+                            <input type="radio" name="portfolio" id="portfolio-yes" checked>
+                            <label for="portfolio-yes" class="radio-label">Да</label>
+                            <input type="radio" name="portfolio" id="portfolio-no">
+                            <label for="portfolio-no" class="radio-label">Нет</label>
+                            <input type="file" name='load-portfolio' id="load-portfolio">
+                            <label for="load-portfolio" class="load-portfolio">Загрузить файлы</label>
+                            <ul class="request-form__portfolio-images">
+                                <li class="request-form__portfolio-images-item"></li>
+                                <li class="request-form__portfolio-images-item"></li>
+                                <li class="request-form__portfolio-images-item"></li>
+                                <li class="request-form__portfolio-images-item"></li>
+                                <li class="request-form__portfolio-images-item"></li>
+                                <li class="request-form__portfolio-images-item"></li>
+                                <li class="request-form__portfolio-images-item"></li>
+                                <li class="request-form__portfolio-images-item"></li>
+                                <li class="request-form__portfolio-images-item"></li>
+                                <li class="request-form__portfolio-images-item"></li>
+                                <li class="request-form__portfolio-images-item"></li>
+                                <li class="request-form__portfolio-images-item"></li>
+                            </ul>
+                        </div>
+                        <div class="input-box input-box_about">
+                            <label for="about">О себе:</label>
+                            <textarea name="about" id="about" class="about"></textarea>
+                            <button type="submit">Отправить анкету</button>
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+        </div>
     </main>        
     <!-- END MAIN -->
 </div>

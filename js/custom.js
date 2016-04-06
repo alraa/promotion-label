@@ -70,4 +70,24 @@ $('.js-slider__list').slick({
   touchThreshold: 200
 });
 /* slider */
+
+/* Portfolio enable/disable */
+$('.request #portfolio-no, .request #portfolio-yes').change(function(){
+    if($('.request #portfolio-no:checked').length>0){
+       $('#load-portfolio').prop('disabled', true);
+    }
+    if($('.request #portfolio-yes:checked').length>0){
+        $('#load-portfolio').prop('disabled', false);
+    }
+});
+
+/*Accordion*/
+$('.accordion').smk_Accordion({
+    showIcon: false,
+    animation: true,
+    closeAble: true,
+    closeOther: false,
+    slideSpeed: 1000
+});
+
 });//ready eof
